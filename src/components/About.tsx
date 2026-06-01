@@ -6,9 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Experienced AI Engineer and former Senior Customer Success Manager
+          transitioning into Generative AI. Background spans software engineering
+          at UBS, customer success at Infosys and Fractal Analytics, and building
+          production-grade multi-agent AI systems. Currently designing RAG
+          pipelines, LangGraph orchestrators, and LLM-powered applications.
         </p>
       </div>
     </div>
