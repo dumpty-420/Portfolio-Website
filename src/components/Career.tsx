@@ -86,9 +86,11 @@ const Career = () => {
                 <h4>Certifications</h4>
                 <h5>Professional Development</h5>
               </div>
-              <h3>2025</h3>
+              <h3>2025 - 2026</h3>
             </div>
             <p>
+              • Generative AI — Coding Ninjas (Nov 2025 - Jul 2026)
+              <br />
               • Microsoft Azure Certified Fundamentals
               <br />
               • HubSpot Academy: Inbound Service Fundamentals (2025)

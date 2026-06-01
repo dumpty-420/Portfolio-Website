@@ -40,7 +40,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Original Design by Moncy Yohannan <br /> Updated by <span>Seerat Chugh</span>
+              <span>Seerat Chugh</span>
             </h2>
             <h5>
               <MdCopyright /> 2026

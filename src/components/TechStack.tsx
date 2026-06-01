@@ -10,6 +10,10 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
@@ -129,12 +133,18 @@ const TechStack = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
+      const techStackElement = document.querySelector(".techstack");
+      if (!techStackElement) return;
+      const rect = techStackElement.getBoundingClientRect();
+      // Activate only when the techstack section actually enters the viewport (top of section is visible)
+      setIsActive(rect.top < window.innerHeight && rect.bottom > 0);
     };
+
+    // Refresh GSAP ScrollTrigger after component mounts to account for layout shifts
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+
     document.querySelectorAll(".header a").forEach((elem) => {
       const element = elem as HTMLAnchorElement;
       element.addEventListener("click", () => {
@@ -148,6 +158,7 @@ const TechStack = () => {
     });
     window.addEventListener("scroll", handleScroll);
     return () => {
+      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);

@@ -12,6 +12,7 @@ interface Project {
   tech: string;
   github: string;
   description: string;
+  image: string;
 }
 
 const projects: Project[] = [
@@ -21,6 +22,7 @@ const projects: Project[] = [
     tech: "LangChain, Pinecone, Google Gemini, RAGAS, BM25, Streamlit",
     github: "https://github.com/dumpty-420/Hireflow",
     description: "AI recruitment platform using hybrid vector + BM25 search with LLM reranking and RAGAS evaluation to match candidates to job descriptions. Central Orchestrator architecture with LangChain RunnableBranch routing shallow vs deep search.",
+    image: "/images/hireflow.webp",
   },
   {
     name: "Inventra Financial Agent",
@@ -28,6 +30,7 @@ const projects: Project[] = [
     tech: "LangGraph, LangChain, Google Gemini, SQLite, OpenWeather API, Streamlit",
     github: "https://github.com/dumpty-420/Inventra-financial-agent",
     description: "Multi-agent system for inventory management, financial analysis, and weather-based demand forecasting. 4-node LangGraph workflow with Central Orchestrator architecture. Includes MCP tools, LangSmith tracing, and automated vendor ticketing.",
+    image: "/images/inventra.webp",
   },
   {
     name: "Agentic RAG",
@@ -35,6 +38,7 @@ const projects: Project[] = [
     tech: "LangGraph, LangChain, Pinecone, Google Gemini, HuggingFace, FastAPI",
     github: "https://github.com/dumpty-420/Agentic-Rag",
     description: "Two-part RAG system — Single Agentic RAG with planning, reranking, criticism, and memory loop; Multi-Agentic RAG with 7 LangGraph agents across 3 Pinecone domain indexes using Reciprocal Rank Fusion and reflection loops. Hybrid architecture.",
+    image: "/images/agentic_rag.webp",
   },
   {
     name: "FlyTripper",
@@ -42,6 +46,7 @@ const projects: Project[] = [
     tech: "Multi-agent system, Google Gemini, Streamlit",
     github: "https://github.com/dumpty-420/FlyTripper",
     description: "Multi-agent AI travel planning system where autonomous agents collaborate to research, plan, and generate complete travel itineraries. Multi-agent architecture with tool-using agents.",
+    image: "/images/flytripper.webp",
   },
 ];
 
@@ -108,7 +113,7 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.tech}</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt={project.name} link={project.github} />
+              <WorkImage image={project.image} alt={project.name} link={project.github} />
             </div>
           ))}
         </div>
