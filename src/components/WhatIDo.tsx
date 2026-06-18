@@ -87,27 +87,32 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & ML</h3>
+              <h3>AI & GENERATIVE AI</h3>
               <h4>Focus Area</h4>
               <p>
-                Designing and evaluating robust RAG systems, multi-agent orchestrators, and custom LLM applications.
+                Designing Agentic AI, multi-agent workflows, and advanced vector search pipelines.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
+                <div className="what-tags">Agentic AI</div>
+                <div className="what-tags">LLMs</div>
+                <div className="what-tags">RAG</div>
+                <div className="what-tags">Hybrid RAG</div>
+                <div className="what-tags">Multi-Agent Systems</div>
                 <div className="what-tags">LangChain</div>
                 <div className="what-tags">LangGraph</div>
-                <div className="what-tags">RAG</div>
+                <div className="what-tags">LangSmith</div>
+                <div className="what-tags">Prompt Engineering</div>
+                <div className="what-tags">RAGAS Evaluation</div>
+                <div className="what-tags">HuggingFace Transformers</div>
+                <div className="what-tags">Sentence Transformers</div>
                 <div className="what-tags">Pinecone</div>
                 <div className="what-tags">FAISS</div>
                 <div className="what-tags">BM25</div>
                 <div className="what-tags">Hybrid Search</div>
-                <div className="what-tags">Google Gemini</div>
-                <div className="what-tags">RAGAS</div>
-                <div className="what-tags">Prompt Engineering</div>
-                <div className="what-tags">Multi-Agent Systems</div>
-                <div className="what-tags">HuggingFace</div>
-                <div className="what-tags">LangSmith</div>
-                <div className="what-tags">MCP</div>
+                <div className="what-tags">Reciprocal Rank Fusion (RRF)</div>
+                <div className="what-tags">Semantic Search</div>
+                <div className="what-tags">Cosine Similarity</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -131,29 +136,25 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>ENGINEERING</h3>
+              <h3>APIs & MLOPS</h3>
               <h4>Focus Area</h4>
               <p>
-                Building production-grade backend services, databases, CI/CD pipelines, and cloud solutions.
+                Integrating proprietary/open-source LLM APIs and building robust containerized deployment pipelines.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Python</div>
+                <div className="what-tags">Google Gemini</div>
+                <div className="what-tags">Anthropic Claude</div>
+                <div className="what-tags">OpenAI GPT</div>
+                <div className="what-tags">Model Context Protocol (MCP)</div>
+                <div className="what-tags">Docker</div>
+                <div className="what-tags">GCP Cloud Run</div>
+                <div className="what-tags">Artifact Registry</div>
+                <div className="what-tags">GitHub Actions</div>
+                <div className="what-tags">CI/CD Pipelines</div>
+                <div className="what-tags">LangSmith Tracing</div>
                 <div className="what-tags">FastAPI</div>
                 <div className="what-tags">Streamlit</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">SQLite</div>
-                <div className="what-tags">SQL</div>
-                <div className="what-tags">REST API</div>
-                <div className="what-tags">Git</div>
-                <div className="what-tags">Docker</div>
-                <div className="what-tags">ELK Stack</div>
-                <div className="what-tags">Linux</div>
-                <div className="what-tags">Kafka</div>
-                <div className="what-tags">Elasticsearch</div>
-                <div className="what-tags">Microsoft Azure</div>
-                <div className="what-tags">ServiceNow</div>
-                <div className="what-tags">CI/CD</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -177,20 +178,24 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUSINESS</h3>
+              <h3>DATA & CLOUD</h3>
               <h4>Focus Area</h4>
               <p>
-                Managing key enterprise SaaS accounts, driving executive business reviews, and accelerating product growth.
+                Backend engineering, relational database design, data analysis, and cloud infrastructure.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Customer Success</div>
-                <div className="what-tags">Account Management</div>
-                <div className="what-tags">Salesforce</div>
-                <div className="what-tags">SaaS</div>
-                <div className="what-tags">Stakeholder Management</div>
-                <div className="what-tags">Executive Business Reviews</div>
-                <div className="what-tags">NRR</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">SQL</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">SQLite</div>
+                <div className="what-tags">Pandas</div>
+                <div className="what-tags">Pydantic</div>
+                <div className="what-tags">REST APIs</div>
+                <div className="what-tags">GCP</div>
+                <div className="what-tags">Cloud Build</div>
+                <div className="what-tags">Cloud Run</div>
+                <div className="what-tags">Microsoft Azure Fundamentals</div>
               </div>
               <div className="what-arrow"></div>
             </div>
